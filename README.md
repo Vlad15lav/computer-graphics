@@ -1,4 +1,4 @@
-# ComputerGraphics
+# Computer Graphics
 Basic topics from computer graphics
 
 1. Geometry description.
