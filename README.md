@@ -8,4 +8,4 @@ Basic topics from computer graphics
 5. Rendering 3D model.
 
 ## Teapot model
-![Альтернативный текст](/NotationObj/teapot.png "Подсказка")
+![](/NotationObj/teapot.png)
