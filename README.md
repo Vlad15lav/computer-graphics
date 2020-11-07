@@ -11,3 +11,5 @@ Basic topics from computer graphics
 ![](/NotationObj/teapot.png)
 ## Algorithm Bresenham
 ![](/Bresenham/teapot.png)
+## Animation gif
+![](/Animation/teapot_anim.png)
