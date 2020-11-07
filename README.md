@@ -6,7 +6,7 @@ Basic topics from computer graphics
 3. Animation creation, affine transformations.
 4. Bezier curves.
 5. Bezier Watch.
-6. Rendering 3D model.
+6. Rendering 3D model. OpenGL.
 
 ## Teapot model
 ![](/NotationObj/teapot.png)
