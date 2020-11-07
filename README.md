@@ -15,3 +15,5 @@ Basic topics from computer graphics
 ## Animation gif
 Download ffmpeg.exe to create gif or mp4 animations. On the developer's website.
 ![](/Animation/teapot_anim.gif)
+## Bezier Curve
+![](/BezierCurve/digits_anim.gif)
