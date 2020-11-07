@@ -9,3 +9,5 @@ Basic topics from computer graphics
 
 ## Teapot model
 ![](/NotationObj/teapot.png)
+## Algorithm Bresenham
+![](/Bresenham/teapot.png)
