@@ -12,4 +12,5 @@ Basic topics from computer graphics
 ## Algorithm Bresenham
 ![](/Bresenham/teapot.png)
 ## Animation gif
-![](/Animation/teapot_anim.png)
+Download ffmpeg.exe to create gif or mp4 animations. On the developer's website.
+![](/Animation/teapot_anim.gif)
