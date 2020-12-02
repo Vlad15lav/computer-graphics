@@ -15,7 +15,7 @@ Obj file - Utah Teapot model:</br>
 The program finds: number of vertices and faces, max and min values of (x, y, z) and the surface area.</br>
 ![](/NotationObj/teapot.png)
 ## Algorithm Bresenham
-Drawing of a teapot using the algorithm Bresenham.
+Drawing of the teapot using the algorithm Bresenham.
 </br>
 ![](/Bresenham/teapot.png)
 ## Animation gif
@@ -23,8 +23,10 @@ Create rotation animations, zoom, and color changes. Affine transformation.
 Download ffmpeg.exe to create gif or mp4 animations. On the developer's website.
 ![](/Animation/teapot_anim.gif)
 ## Bezier curves
+Create an animation of changing digits (0-9) based on Bezier curves.</br>
 ![](/BezierСurve/digits_anim.gif)
 ## Bezier clock
+Creating the Bezier clock.</br>
 ![](/Clock/clock_anim.gif)
 ## Rendering 3D model. OpenGL
 TODO
