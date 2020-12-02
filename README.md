@@ -29,3 +29,34 @@ Create an animation of changing digits (0-9) based on Bezier curves.</br>
 Creating the Bezier clock.</br>
 ![](/Clock/clock_anim.gif)
 ## Rendering 3D model. OpenGL
+Rendering 3d model, OpenGL annotation.
+
+Reference Coordinates in 3-d graphics:
+- Local space
+- World space
+- View space
+- Clip space
+- Screen space
+
+![](/OpenGL/spaces.png)
+
+Culling of invisible faces
+- Scalar product of the camera vector and the normals to the face.
+- Z-buffer
+
+Texture overlay
+- Texture coordinates (vt)
+- Interpolation of barycentric coordinates
+
+Lighting with the Phong reflection model
+- Ambient, Diffuse, Specular
+- Lighting attenuation
+
+Rendering
+- Wire model
+- Model with faces (gray color)
+- Model with textures
+- Model with lighting
+- Model with textures + lighting
+`Code coming soon`
+
