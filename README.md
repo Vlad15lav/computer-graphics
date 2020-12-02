@@ -8,7 +8,10 @@ Basic topics from computer graphics
 5. Bezier clock.
 6. Rendering 3D model. OpenGL.
 
-## Teapot model
+## Obj format notation
+Obj file - teapot model:</br>
+1. The list of vertices - "v" market
+2. Facets - "f" market
 ![](/NotationObj/teapot.png)
 ## Algorithm Bresenham
 ![](/Bresenham/teapot.png)
