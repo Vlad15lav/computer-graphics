@@ -1,6 +1,8 @@
 # Computer Graphics
 Basic topics from computer graphics
 
+` TODO: Rendering OpenGL `
+
 1. Geometry description.
 2. Displaying the model as polygons. The Algorithm Bresenham.
 3. Animation creation, affine transformations.
@@ -37,7 +39,6 @@ Reference Coordinates in 3-d graphics:
 - View space
 - Clip space
 - Screen space
-
 ![](/OpenGL/spaces.png)
 
 Culling of invisible faces
@@ -58,5 +59,3 @@ Rendering
 - Model with textures
 - Model with lighting
 - Model with textures + lighting
-`Code coming soon`
-
