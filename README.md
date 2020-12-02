@@ -5,7 +5,7 @@ Basic topics from computer graphics
 2. Displaying the model as polygons. The Algorithm Bresenham.
 3. Animation creation, affine transformations.
 4. Bezier curves.
-5. Bezier Watch.
+5. Bezier clock.
 6. Rendering 3D model. OpenGL.
 
 ## Teapot model
