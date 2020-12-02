@@ -12,6 +12,7 @@ Basic topics from computer graphics
 Obj file - Utah Teapot model:</br>
 1. The list of vertices - "v" market
 2. Facets - "f" market
+
 The program finds: number of vertices and faces, max and min values of (x, y, z) and the surface area.</br>
 ![](/NotationObj/teapot.png)
 ## Algorithm Bresenham
