@@ -34,7 +34,7 @@ Create an animation of changing digits (0-9) based on Bezier curves.</br>
 Creating the Bezier clock.</br>
 ![](/Clock/clock_anim.gif)
 ## Rendering 3D model. OpenGL
-Rendering 3d model, OpenGL annotation.
+Rendering 3D model, OpenGL annotation.
 
 Reference Coordinates in 3-d graphics:
 - Local space
