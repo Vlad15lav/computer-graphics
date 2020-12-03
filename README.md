@@ -10,6 +10,9 @@ Basic topics from computer graphics
 5. Bezier clock.
 6. Rendering 3D model. OpenGL.
 
+# Requirements
+` pip install -U -r requirements.txt `
+
 ## Obj format notation
 Obj file - Utah Teapot model:</br>
 1. The list of vertices - "v" market
@@ -39,7 +42,8 @@ Reference Coordinates in 3-d graphics:
 - View space
 - Clip space
 - Screen space
-![](/OpenGL/spaces.png)
+
+![](/Rendering/spaces.png)
 
 Culling of invisible faces
 - Scalar product of the camera vector and the normals to the face.
@@ -53,9 +57,13 @@ Lighting with the Phong reflection model
 - Ambient, Diffuse, Specular
 - Lighting attenuation
 
+![](/Rendering/phong.png)
+
 Rendering
 - Wire model
 - Model with faces (gray color)
 - Model with textures
 - Model with lighting
 - Model with textures + lighting
+
+![](/Rendering/images.png)
