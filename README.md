@@ -36,7 +36,7 @@ Creating the Bezier clock.</br>
 ## Rendering 3D model. OpenGL
 Rendering 3D model, OpenGL annotation.
 
-Reference Coordinates in 3-d graphics:
+Reference Coordinates in 3D graphics:
 - Local space
 - World space
 - View space
