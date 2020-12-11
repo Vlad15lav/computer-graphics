@@ -46,7 +46,7 @@ Reference Coordinates in 3D graphics:
 ![](/Rendering/spaces.png)
 
 Culling of invisible faces
-- Scalar product of the camera vector and the normals to the face.
+- Back-face culling
 - Z-buffer
 
 Texture overlay
