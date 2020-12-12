@@ -1,7 +1,7 @@
 # Computer Graphics
 Basic topics from computer graphics
 
-` TODO: Bezier Clock, Rendering OpenGL `
+` TODO: Rendering OpenGL `
 
 1. Geometry description.
 2. Displaying the model as polygons. The Algorithm Bresenham.
