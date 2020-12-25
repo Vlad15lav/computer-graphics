@@ -1,5 +1,5 @@
 # Computer Graphics
-Basic topics from computer graphics
+Basic topics from Computer Graphics
 
 ` TODO: Rendering OpenGL `
 
