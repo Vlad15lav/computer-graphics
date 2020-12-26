@@ -1,6 +1,6 @@
 import argparse
 import os
-from utils.animator import animator
+from utils.animator import anim
 
 def get_args():
     parser = argparse.ArgumentParser('Computer Graphics: Bresenham - Vlad15lav')
@@ -16,4 +16,4 @@ def get_args():
 
 if __name__ == '__main__':
     opt = get_args()
-    animator(opt.ffmpeg, opt.path, opt.bgcolor, opt.frames, opt.fps, opt.interval)
+    anim(opt.ffmpeg, opt.path, opt.bgcolor, opt.frames, opt.fps, opt.interval)
