@@ -23,6 +23,9 @@ Obj file - Utah Teapot model:</br>
 2. Facets - "f" market
 
 The program finds: number of vertices and faces, max and min values of (x, y, z) and the surface area.</br>
+```
+!python main.py -p source/teapot.obj
+```
 ![](/NotationObj/teapot.png)
 ## Algorithm Bresenham
 Drawing of the teapot using the algorithm Bresenham.</br>
