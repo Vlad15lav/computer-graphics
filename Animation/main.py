@@ -3,7 +3,7 @@ import os
 from utils.animator import anim
 
 def get_args():
-    parser = argparse.ArgumentParser('Computer Graphics: Bresenham - Vlad15lav')
+    parser = argparse.ArgumentParser('Computer Graphics: Animation - Vlad15lav')
     parser.add_argument('-f', '--ffmpeg', type=str, default='ffmpeg.exe', help='path ffmpeg file')
     parser.add_argument('-p', '--path', type=str, default='source/teapot.obj', help='path obj file')
     parser.add_argument('-b', '--bgcolor', type=int, nargs="+", default=[255, 255, 255], help='background color')
