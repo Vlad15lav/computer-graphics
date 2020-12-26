@@ -29,6 +29,9 @@ The program finds: number of vertices and faces, max and min values of (x, y, z)
 ![](/NotationObj/teapot.png)
 ## Algorithm Bresenham
 Drawing of the teapot using the algorithm Bresenham.</br>
+```
+!python main.py -p source/teapot.obj -s 1024 1024 -b 255 255 255 -c 0 0 255 --scale 145 --save True
+```
 ![](/Bresenham/teapot.png)
 ## Animation gif
 Create rotation animations, zoom, and color changes. Affine transformation.
