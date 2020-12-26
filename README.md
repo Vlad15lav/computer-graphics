@@ -1,7 +1,9 @@
 # Computer Graphics
 Basic topics from Computer Graphics
 
-` TODO: Rendering OpenGL `
+```
+TODO: Rendering OpenGL
+```
 
 1. Geometry description.
 2. Displaying the model as polygons. The Algorithm Bresenham.
@@ -11,7 +13,9 @@ Basic topics from Computer Graphics
 6. Rendering 3D model. OpenGL.
 
 # Requirements
-` pip install -U -r requirements.txt `
+```
+pip install -U -r requirements.txt
+```
 
 ## Obj format notation
 Obj file - Utah Teapot model:</br>
