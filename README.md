@@ -24,18 +24,21 @@ Obj file - Utah Teapot model:</br>
 
 The program finds: number of vertices and faces, max and min values of (x, y, z) and the surface area.</br>
 ```
-!python main.py -p source/teapot.obj
+python main.py -p source/teapot.obj
 ```
 ![](/NotationObj/teapot.png)
 ## Algorithm Bresenham
 Drawing of the teapot using the algorithm Bresenham.</br>
 ```
-!python main.py -p source/teapot.obj -s 1024 1024 -b 255 255 255 -c 0 0 255 --scale 145 --save True
+python main.py -p source/teapot.obj -s 1024 1024 -b 255 255 255 -c 0 0 255 --scale 145 --save True
 ```
 ![](/Bresenham/teapot.png)
 ## Animation gif
 Create rotation animations, zoom, and color changes. Affine transformation.
 Download ffmpeg.exe to create gif or mp4 animations. On the developer's website.</br>
+```
+python main.py -f ffmpeg.exe -p source/teapot.obj -b 255 255 255 --frames 100 --fps 24 --interval 30
+```
 ![](/Animation/teapot_anim.gif)
 ## Bezier curves
 Create an animation of changing digits (0-9) based on Bezier curves.</br>
