@@ -6,7 +6,7 @@ from tqdm import tqdm
 import matplotlib.animation as animation
 from matplotlib.animation import PillowWriter
 
-def animator(ffmpeg_path, path_obj, bgcolor=(255, 255, 255), frames=100, fps=24, interval=30):
+def anim(ffmpeg_path, path_obj, bgcolor=(255, 255, 255), frames=100, fps=24, interval=30):
     plt.rcParams['animation.ffmpeg_path'] = ffmpeg_path
 
     with open(path_obj, 'r') as file:
