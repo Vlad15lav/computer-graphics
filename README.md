@@ -52,6 +52,9 @@ python main.py -f source/ffmpeg.exe -p source/digits.json -t 200 -u 24 -b 0 0 0 
 ![](/BezierСurve/digits_anim.gif)
 ## Bezier clock
 Creating the Bezier clock.</br>
+```
+python main.py -p source/digits.json -b 0 0 0 -c 0 0 255 --bright 10 --zone 3
+```
 ![](/Clock/clock_anim.gif)
 ## Rendering 3D model. OpenGL
 Rendering 3D model, OpenGL annotation.
