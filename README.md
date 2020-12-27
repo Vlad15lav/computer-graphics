@@ -44,7 +44,12 @@ python main.py -f source/ffmpeg.exe -p source/teapot.obj -b 255 255 255 --frames
 ![](/Animation/teapot_anim.gif)
 ## Bezier curves
 Create an animation of changing digits (0-9) based on Bezier curves.</br>
-![](/BezierСurve/digits_anim.gif)
+```
+wget https://github.com/Vlad15lav/Computer-Graphics/releases/download/animation/ffmpeg.exe -O source/ffmpeg.exe
+
+python main.py -f source/ffmpeg.exe -p source/digits.json -t 120 -u 12 -b 0 0 0 -c 0 255 0 --fps 24 --interval 60
+```
+![](/BezierСurve/anim.gif)
 ## Bezier clock
 Creating the Bezier clock.</br>
 ![](/Clock/clock_anim.gif)
