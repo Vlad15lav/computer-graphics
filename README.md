@@ -37,7 +37,7 @@ python main.py -p source/teapot.obj -s 1024 1024 -b 255 255 255 -c 0 0 255 --sca
 Create rotation animations, zoom, and color changes. Affine transformation.
 Download ffmpeg.exe to create gif or mp4 animations. On the developer's website.</br>
 ```
-python main.py -f ffmpeg.exe -p source/teapot.obj -b 255 255 255 --frames 100 --fps 24 --interval 30
+python main.py -f source/ffmpeg.exe -p source/teapot.obj -b 255 255 255 --frames 100 --fps 24 --interval 30
 ```
 ![](/Animation/teapot_anim.gif)
 ## Bezier curves
