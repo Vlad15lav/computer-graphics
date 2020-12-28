@@ -90,7 +90,7 @@ Rendering
 - Model with textures + lighting
 
 ![](/Rendering/images/images.png)
-Rendering help:
+**Rendering help:**
 ```
 python main.py --help
 
@@ -112,7 +112,7 @@ optional arguments:
   --light               light enable
   --save                save img
 ```
-Rendering command:
+**Rendering command:**
 ```
 python main.py -m african_head --texture --light --save
 ```
