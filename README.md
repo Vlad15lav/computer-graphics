@@ -90,3 +90,27 @@ Rendering
 - Model with textures + lighting
 
 ![](/Rendering/images.png)
+```
+python main.py --help
+
+usage: Computer Graphics: 3D Rendering - Vlad15lav [-h] [-m MODEL]
+                                                   [-b BGCOLOR [BGCOLOR ...]]
+                                                   [--wire] [--gray]
+                                                   [--texture] [--light]
+                                                   [--save]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -m MODEL, --model MODEL
+                        path yml file
+  -b BGCOLOR [BGCOLOR ...], --bgcolor BGCOLOR [BGCOLOR ...]
+                        background color
+  --wire                wire model
+  --gray                gray model by back-face culling
+  --texture             texture enable
+  --light               light enable
+  --save                save img
+```
+```
+python main.py -m african_head --texture --light --save
+```
