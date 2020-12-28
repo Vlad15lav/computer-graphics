@@ -2,7 +2,7 @@
 Basic topics from Computer Graphics
 
 ```
-TODO: Rendering OpenGL
+TODO: 3D Animation(Add Rendernig task)
 ```
 
 1. Geometry description.
