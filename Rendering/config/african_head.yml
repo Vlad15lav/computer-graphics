@@ -1,0 +1,52 @@
+# Path model and tga
+obj_path: 'source/models/african_head.obj'
+tga_path: 'source/textures/african_head_diffuse.tga'
+
+# Image size
+img_wh: [1024, 1024]
+
+model:
+    # Local to World
+    position: [0, 0, 0]
+    rotate: [0, 180, 0]
+    scale: [32, 32, 32]
+
+camera:
+    # World to Camera
+    lockCam: [0, 0, -150]
+    lookCam: [0, 0, 0]
+
+    # Projection
+    top: 32
+    bottom: -32
+    right: 32
+    left: -32
+    fear: 320
+    near: 120
+    Prespective: True # Prespective or Orthographic
+
+    # Viewport
+    viewport_wh: [1024, 1024]
+    viewport_xy: [0, 0] # xmin ymin
+
+# Light settings
+light:
+    light_pos: [-5, -15, -110]
+
+    # Ambient light
+    Ia: [25, 25, 25]
+    Ka: [1, 1, 1]
+    # Diffuse light
+    Id: [180, 150, 190]
+    Kd: [0.8, 1, 0.9]
+    # Specular light
+    Is: [255, 255, 255]
+    Ks: [0.8, 0.8, 0.8]
+    alpha_s: 10
+
+    # Attenuation light (Inverse Square Law)
+    InverseSL: [1, 0.01, 0.001]
+
+# Rasterization settings (Enable)
+z_buffer: True
+bfc: True # Back-face culling
