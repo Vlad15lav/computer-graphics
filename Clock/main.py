@@ -3,7 +3,7 @@ import os
 from utils.clock import Clock
 
 def get_args():
-    parser = argparse.ArgumentParser('Computer Graphics: BezierCurve - Vlad15lav')
+    parser = argparse.ArgumentParser('Computer Graphics: Clock - Vlad15lav')
     parser.add_argument('-p', '--path', type=str, default='source/digits.json', help='path json file')
     parser.add_argument('-b', '--bgcolor', type=int, nargs="+", default=[0, 0, 0], help='background color')
     parser.add_argument('-c', '--color', type=int, nargs="+", default=[0, 0, 255], help='digits color')
