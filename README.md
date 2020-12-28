@@ -66,7 +66,7 @@ Reference Coordinates in 3D graphics:
 - Clip space
 - Screen space
 
-![](/Rendering/spaces.png)
+![](/Rendering/images/spaces.png)
 
 Culling of invisible faces
 - Back-face culling
@@ -80,7 +80,7 @@ Lighting with the Phong reflection model
 - Ambient, Diffuse, Specular
 - Lighting attenuation
 
-![](/Rendering/phong.png)
+![](/Rendering/images/phong.png)
 
 Rendering
 - Wire model
@@ -89,7 +89,7 @@ Rendering
 - Model with lighting
 - Model with textures + lighting
 
-![](/Rendering/images.png)
+![](/Rendering/images/images.png)
 Rendering help:
 ```
 python main.py --help
