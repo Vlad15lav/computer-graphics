@@ -116,3 +116,4 @@ optional arguments:
 ```
 python main.py -m african_head --texture --light --save
 ```
+![](/Rendering/images/heads.png)
