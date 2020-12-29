@@ -89,7 +89,6 @@ Rendering
 - Model with lighting
 - Model with textures + lighting
 
-![](/Rendering/images/images.png)
 **Rendering help:**
 ```
 python main.py --help
