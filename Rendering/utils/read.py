@@ -24,4 +24,4 @@ def readfile(obj_path, tga_path):
         vn = np.array(vn, dtype=np.float32)
         fac = np.array(f, dtype=np.int32) - 1
         texture = np.asarray(Image.open(tga_path), dtype="int32")
-        return tool.xyz2xyz1(v), vt, tool.xyz2xyz1(vn), fac, texture
+        return tool.xyz2xyz1(v), vt, tool.xyz2xyz1(vn), fac, texture, texture.shape
