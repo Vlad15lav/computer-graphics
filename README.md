@@ -94,15 +94,18 @@ Rendering
 python main.py --help
 
 usage: Computer Graphics: 3D Rendering - Vlad15lav [-h] [-m MODEL]
+                                                   [-s LOAD_SCENE]
                                                    [-b BGCOLOR [BGCOLOR ...]]
                                                    [--wire] [--gray]
                                                    [--texture] [--light]
-                                                   [--save]
+                                                   [--save] [--save_scene]
 
 optional arguments:
   -h, --help            show this help message and exit
   -m MODEL, --model MODEL
                         path yml file
+  -s LOAD_SCENE, --load_scene LOAD_SCENE
+                        path scene file
   -b BGCOLOR [BGCOLOR ...], --bgcolor BGCOLOR [BGCOLOR ...]
                         background color
   --wire                wire model
@@ -110,9 +113,20 @@ optional arguments:
   --texture             texture enable
   --light               light enable
   --save                save img
+  --save_scene          save scene
 ```
 **Rendering command:**
 ```
 python main.py -m african_head --texture --light --save
 ```
 ![](/Rendering/images/heads.png)
+### Creating scene
+**Rendering the african head**
+```
+python main.py -m african_head --texture --light --save_scene
+```
+**Add the model's eyes**
+```
+python main.py -m african_eyes --load_scene african_head --texture --light --save --save_scene
+```
+![](/Rendering/images/african_eyes.png)
