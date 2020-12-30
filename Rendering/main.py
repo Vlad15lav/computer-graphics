@@ -19,13 +19,15 @@ class Params:
 
 def get_args():
     parser = argparse.ArgumentParser('Computer Graphics: 3D Rendering - Vlad15lav')
-    parser.add_argument('-m', '--model', type=str, help='path yml file')
+    parser.add_argument('-m', '--model', type=str, help='path save file')
+    parser.add_argument('-s', '--load_scene', type=str, help='path scene file')
     parser.add_argument('-b', '--bgcolor', type=int, nargs="+", default=[0, 0, 0], help='background color')
     parser.add_argument('--wire', help='wire model', action="store_true")
     parser.add_argument('--gray', help='gray model by back-face culling', action="store_true")
     parser.add_argument('--texture', help='texture enable', action="store_true")
     parser.add_argument('--light', help='light enable', action="store_true")
     parser.add_argument('--save', help='save img', action="store_true")
+    parser.add_argument('--save_scene', help='save scene', action="store_true")
 
     args = parser.parse_args()
     return args
@@ -36,11 +38,18 @@ if __name__ == '__main__':
     obj = Render(params.obj_path, params.tga_path, params.img_wh, opt.bgcolor)
     obj.setlight(*params.light.values())
     obj.transforms(*params.model.values(), *params.camera.values())
+
+    if not opt.load_scene is None:
+        obj.load_scene(opt.load_scene)
     
     if opt.wire:
         obj.wire()
         obj.show(opt.model, opt.save)
-    
+        obj.clear()
+
     if opt.gray or opt.texture or opt.light:
         obj.rasterization(isGray=opt.gray, isTexture=opt.texture, isLight=opt.light, isZbuffer=params.z_buffer, isBfc=params.bfc)
         obj.show(opt.model, opt.save)
+    
+    if opt.save_scene:
+        obj.save_scene(opt.model)
