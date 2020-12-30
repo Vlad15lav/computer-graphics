@@ -6,10 +6,12 @@ import utils.tools as tool
 import numpy as np
 import matplotlib.pyplot as plt
 import math
+import pickle
+import os
 
 class Render:
     def __init__(self, obj_path, tga_path, img_size, bgcolor):
-        self.vertexes, self.vertexes_t, self.vertexes_vn, self.faces, self.texture = readfile(obj_path, tga_path)
+        self.vertexes, self.vertexes_t, self.vertexes_vn, self.faces, self.texture, self.tga_shape = readfile(obj_path, tga_path)
         self.img_size = img_size
         self.image = np.zeros((*img_size, 3), dtype=np.uint8)
         self.bgcolor = np.array(bgcolor)
@@ -93,7 +95,6 @@ class Render:
             self.__DrawPixel(x, y, color)
 
     def wire(self):
-        self.clear()
         for i in tqdm(range(self.faces.shape[0])):
             x0, y0, z0 = self.vertexes[self.faces[i, 0, 0], 0], self.vertexes[self.faces[i, 0, 0], 1], self.vertexes[self.faces[i, 0, 0], 2]
             x1, y1, z1 = self.vertexes[self.faces[i, 1, 0], 0], self.vertexes[self.faces[i, 1, 0], 1], self.vertexes[self.faces[i, 1, 0], 2]
@@ -103,7 +104,6 @@ class Render:
             self.__lineBresenham(x2, y2, x0, y0, (0, 210, 210))
 
     def rasterization(self, isGray, isTexture, isLight, isZbuffer, isBfc):
-        self.clear()
         for i in tqdm(range(self.faces.shape[0])):
             light = tool.vec2scalar(self.normals[i], self.cameraVec)
             if light < 0 and isBfc:  # Back-face culling
@@ -162,10 +162,10 @@ class Render:
                                 Is = self.Is_light * tool.vec2cos(R, self.viewVec[i]) ** self.Is_alpha
                                 I = Ia + self.__attenuation(tool.vec2lenght(self.lightVec[i])) * (Id + Is)
                                 
-                                color = np.clip(self.texture[np.int_(np.round((1 - t_coord[1]) * 1023)), np.int_(np.round(t_coord[0] * 1023))] * I / 255, 0, 255)
+                                color = np.clip(self.texture[np.int_(np.round((1 - t_coord[1]) * (self.tga_shape[0] - 1))), np.int_(np.round(t_coord[0] * (self.tga_shape[1] - 1)))] * I / 255, 0, 255)
                                 self.__DrawPixel(x_i, y_i, color)
                             else:
-                                color = self.texture[int((1 - t_coord[1]) * 1023), int(t_coord[0] * 1023)]
+                                color = self.texture[int((1 - t_coord[1]) * (self.tga_shape[0] - 1)), int(t_coord[0] * (self.tga_shape[1] - 1))]
                                 self.__DrawPixel(x_i, y_i, color)
                         elif isLight:
                             pix_n = np.array((tool.vec2scalar(V, np.array([vn00, vn10, vn20])),
@@ -189,13 +189,32 @@ class Render:
     def clear(self):
         self.image[:] = self.bgcolor
         self.z_buffer[:] = np.full(self.img_size, np.inf)
+    
+    def save_scene(self, title=''):
+        if not os.path.exists('scenes'):
+            os.makedirs('scenes')
+        f = open(r'scenes/{}.scene'.format(title), 'wb')
+        obj = {'Image': self.image, 'Z_buffer': self.z_buffer}
+        pickle.dump(obj, f)
+        print('The scene is saved to file - {}.scene!'.format(title))
+        f.close()
+    
+    def load_scene(self, title=''):
+        try:
+            f = open(r'scenes/{}.scene'.format(title), 'rb')
+        except (OSError, IOError) as e:
+            return
+        obj = pickle.load(f)
+        self.image = obj['Image']
+        self.z_buffer = obj['Z_buffer']
+        f.close()
 
     def show(self, title='', isSave=False):
         plt.figure(title)
         plt.imshow(self.image)
         plt.axis('off')
         if isSave:
-            plt.savefig('{}.png'.format(title))
+            plt.savefig('images/{}.png'.format(title))
         plt.show()
 
     def getImage(self):
