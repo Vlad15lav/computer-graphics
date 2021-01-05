@@ -1,10 +1,6 @@
 # Computer Graphics
 Basic topics from Computer Graphics
 
-```
-TODO: 3D Animation(Add Rendernig task)
-```
-
 1. Geometry description.
 2. Displaying the model as polygons. The Algorithm Bresenham.
 3. Animation creation, affine transformations.
@@ -120,7 +116,7 @@ optional arguments:
 python main.py -m african_head --texture --light --save
 ```
 ![](/Rendering/images/heads.png)
-### Creating scene
+### Creating scene:
 **Rendering the african head**
 ```
 python main.py -m african_head --texture --light --save_scene
@@ -130,3 +126,12 @@ python main.py -m african_head --texture --light --save_scene
 python main.py -m african_eyes --load_scene african_head --texture --light --save --save_scene
 ```
 ![](/Rendering/images/african_eyes.png)
+### Creating an animation:
+**Rotate african head model**
+```
+python rotate_model.py -m african_head -f source/ffmpeg.exe --texture --light
+```
+**Rotate the light source**
+```
+python rotate_light.py -m african_head -f source/ffmpeg.exe --texture --light
+```
