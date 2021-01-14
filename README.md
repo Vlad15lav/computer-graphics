@@ -8,6 +8,8 @@ Basic topics from Computer Graphics
 5. Bezier clock.
 6. Rendering 3D model. OpenGL.
 
+` TODO: gif animation for the last task `
+
 # Requirements
 ```
 pip install -U -r requirements.txt
