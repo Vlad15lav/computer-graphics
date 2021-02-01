@@ -65,11 +65,11 @@ if __name__ == '__main__':
             obj.rasterization(isGray=opt.gray, isTexture=opt.texture, isLight=opt.light, isZbuffer=params.z_buffer, isBfc=params.bfc)
             im = plt.imshow(obj.getImage())
     
-    frames.append([im])
+        frames.append([im])
 
     print('Frames creation finshed.')
 
     # gif animation creation
     ani = animation.ArtistAnimation(fig, frames, interval=opt.interval, blit=True, repeat_delay=0)
     writer = PillowWriter(fps=opt.fps)
-    ani.save("images/{opt.model}.gif", writer=writer)
+    ani.save(f"images/{opt.model}.gif", writer=writer)
