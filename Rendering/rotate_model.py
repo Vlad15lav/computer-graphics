@@ -48,7 +48,7 @@ if __name__ == '__main__':
     # Create frames
     frames = []
     fig = plt.figure()
-    start_pos = params.model['rotate']
+    start_pos = np.copy(params.model['rotate'])
     for i in range(opt.frames):
         deg = start_pos[1] + i * 360 / opt.frames
         params.model['rotate'][1] = deg
