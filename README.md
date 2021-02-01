@@ -8,8 +8,6 @@ Basic topics from Computer Graphics
 5. Bezier clock.
 6. Rendering 3D model. OpenGL.
 
-` TODO: gif animation for the last task `
-
 # Requirements
 ```
 pip install -U -r requirements.txt
@@ -133,7 +131,9 @@ python main.py -m african_eyes --load_scene african_head --texture --light --sav
 ```
 python rotate_model.py -m african_head -f source/ffmpeg.exe --texture --light
 ```
+![](/Rendering/images/african_rotate.gif)
 **Rotate the light source**
 ```
 python rotate_light.py -m african_head -f source/ffmpeg.exe --texture --light
 ```
+![](/Rendering/images/african_light.gif)
