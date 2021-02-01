@@ -131,7 +131,7 @@ python main.py -m african_eyes --load_scene african_head --texture --light --sav
 ```
 python rotate_model.py -m african_head -f source/ffmpeg.exe --texture --light
 ```
-![](/Rendering/images/african_rotate.gif)
+![](/Rendering/images/african_rotate.gif)</br>
 **Rotate the light source**
 ```
 python rotate_light.py -m african_head -f source/ffmpeg.exe --texture --light
